@@ -1,0 +1,262 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.brow {
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  color: #664d48;
+}
+
+.first-list {
+  color: #664d48;
+  text-align: center;
+  justify-content: start;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+.first-list-container ul li {
+  font-size: larger;
+  text-align: left;
+}
+
+.why-course {
+  margin:2%;
+}
+
+.container-btn {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 20px 50px;
+  font-size: 1.25rem;
+  position: relative;
+  margin: 32px;
+}
+
+.btn-join {
+  overflow: hidden;
+  color:black;
+  border-radius: 30px;
+  box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 64, 200, 0.5);
+  transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+
+.btn-join:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(185, 145, 236, 0.5), -10px 10px 25px 0 rgba(39, 64, 200, 0.5);
+}
+
+.btn-join::after {
+  content:"";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  /* background-color: #ff3cac; */
+  background-image: linear-gradient(225deg, #fbff00 0%, #f5df14 50%, #fceb04 100%);
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+
+.main-mockup {
+  width: 50%;
+  height: 50%;
+}
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 30px;
+	width: 300px;
+}
+
+.progress-done {
+	background: linear-gradient(to left, #ff0202, #FF9472);
+	box-shadow: 0 3px 3px -5px #f27f70, 0 2px 5px #F2709C;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+@media (min-width: 350px) {
+  .title {
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+  }
+  .brow {
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: #664d48;
+  }
+  .first-list-container ul li {
+    font-size: larger;
+    text-align: left;
+    font-size: 16px;
+  }
+  .first-list {
+    color: #664d48;
+    text-align: center;
+    justify-content: start;
+    margin-right: 10%;
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 500px) {
+  ul li {
+    font-size: medium;
+  }
+  .carousel-imgs {
+    width: 65%;
+    height: 15%;
+    text-align: center;
+  }
+  .carousel-imgs-6854 {
+    width: 250px;
+    height: 320px;
+    text-align: center;
+  }
+  .mockup-copy-main {
+    width: 50%;
+    height: 50%;
+  }
+  .brow {
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #664d48;
+  }
+  .title {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+  }
+  .first-list {
+    color: #664d48;
+    text-align: center;
+    justify-content: start;
+    margin-right: 10%;
+    margin-left: 17%;
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 700px) {
+  ul li {
+    font-size: large;
+  }
+  .carousel-imgs {
+    width: 45%;
+    height: 10%;
+    text-align: center;
+  }
+  .carousel-imgs-6854 {
+    width: 45%;
+    height: 10%;
+    text-align: center;
+  }
+
+  .mockup-copy-main {
+    width: 50%;
+    height: 50%;
+  }
+  .brow {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #664d48;
+  }
+  .title {
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 830px) {
+  ul li {
+    font-size: larger;
+  }
+  .carousel-imgs {
+    width: 350px;
+    height: 650px;
+    text-align: center;
+  }
+  .carousel-imgs-6854 {
+    width: 550px;
+    height: 410px;
+    text-align: center;
+  }
+
+  .mockup-copy {
+    width: 100%;
+  }
+
+  .mockup-copy-main {
+    width: 50%;
+    height: 50%;
+  }
+  .brow {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: #664d48;
+  }
+  .title {
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+  }
+  .first-list {
+    color: #664d48;
+    text-align: center;
+    justify-content: start;
+    margin-right: 10%;
+    margin-left: 19%;
+    margin-top: 2%;
+  }
+}

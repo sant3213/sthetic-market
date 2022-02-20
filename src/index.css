@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5e7da;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.learn-list {
+  columns: 2;
+  text-align: left;
+  padding: 0px;
+}
+
+.icon-list {
+  width: 20%;
+  height: 20%;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  font-size: small
+}
+
+
+  .svg-inline--fa {
+    margin-right: 2%;
+  }
+
+li img {
+  width: 60px;
+  margin-right: 1%;
+}
+/* strong {
+  font-weight: 900;
+} */
+
+.mockup {
+  text-align: center;
+}
+
+.mockup img {
+  width: 90%;
+  height: 90%;
+}
+.urgent {
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+.title {
+  text-align: center;
+  color: #333399;
+  margin-bottom: 1%;
+}
+.title-b {
+  margin-top: 1%;
+  color: #664d48;
+  text-align: center;
+}
+main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-copy-left {
+  width: 130%;
+  height: 95%;
+  text-align: right;
+}
+.mockup-copy-right {
+  width: 130%;
+  height: 95%;
+  text-align: left;
+}
+
+.check {
+  color: #c08070;
+  padding: 0px;
+}
+.line{
+  border: 1px solid #c08070;
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.currentPrice {
+  font-size: x-large;
+  font-weight: 750;
+  margin-bottom: 0%;
+}
+
+.first-currentPrice{
+  margin-top: 6%;
+  border-radius: 15px;
+  border: 4px solid white;
+  margin: 2px;
+}
+
+.discount {
+  font-size: large;
+  font-weight: 750;;
+}
+
+.prices {
+  margin-top: 5%;
+  text-align: center;
+  background-color: red;
+  color:white;
+  width: 30%;
+  border-radius: 15px;
+}
+
+.tachado {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+}
+
+.carousel-imgs{
+  width: 85%;
+  height: 30%;
+  text-align: center;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.visually-hidden {
+  color:black;
+}
+
+.carousel-control-next-icon {
+  color:black
+}
+
+.result{
+  width: 100%;
+  height: 100%;
+  margin: 5%;
+}
+
+
+@media (min-width: 300px) { 
+  .carousel-imgs-6854{
+    width: 240px;
+    height: 300px;
+    text-align: center;
+  }
+  .mockup-copy-main {
+    width: 50%;
+    height: 50%;
+    }
+}
+
+.portada {
+  text-align: center;
+}
