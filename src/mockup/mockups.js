@@ -6,9 +6,10 @@ export default function Mockup({parentToChild}) {
 
     return (
       <Container>
-        <Row>
+         <h3 className="title"> {parentToChild.title}</h3>
+        <Row className="copy-list">
+       
           <Col xs={4}>
-            <h3 className="title"> {parentToChild.title}</h3>
             <div>
               <img
                 className="mockup-copy-left"
@@ -18,28 +19,10 @@ export default function Mockup({parentToChild}) {
             </div>
           </Col>
           <Col xs={8}>
-            <ul className="copy-one-list">
+            <ul >
             {parentToChild.copys.map(function(name, index){
-                    return <li key={ index }> <FontAwesomeIcon className="check" icon={faCircleCheck} /> <span>{name}</span></li>;
+                    return <li key={ index }> <FontAwesomeIcon className="check" icon={faCircleCheck} />   <span align="justify">{name}</span></li>;
                   })}
-              {/* <li>
-                <FontAwesomeIcon className="check" icon={faCircleCheck} />
-                <span>
-                  Descrube como ganar dinero realizando drenaje linfatico
-                  braseileño
-                </span>
-              </li>
-              <li>
-                <FontAwesomeIcon className="check" icon={faCircleCheck} />
-                <span>
-                  Descrube como ganar dinero realizando drenaje linfatico
-                  braseileño
-                </span>
-              </li>
-              <li>
-                <FontAwesomeIcon className="check" icon={faCircleCheck} />
-                <span>Con este curso podras gastar dinerito</span>
-              </li> */}
             </ul>
           </Col>
         </Row>

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f5e7da;
+  background-color: #f7f1ec;
 }
 
 code {
@@ -27,7 +27,7 @@ li {
   list-style-type: none;
   margin-bottom: 2%;
   margin-left: 1%;
-  font-size: small
+  font-size: medium
 }
 
 
@@ -111,7 +111,8 @@ main {
 
 .discount {
   font-size: large;
-  font-weight: 750;;
+  font-weight: 750;
+  margin-bottom: 0;
 }
 
 .prices {
@@ -130,7 +131,13 @@ main {
 
 .carousel-imgs{
   width: 85%;
-  height: 30%;
+  height: 100%;
+  text-align: center;
+}
+
+.carousel-imgs-3{
+  width: 85%;
+  height: 50%;
   text-align: center;
 }
 
@@ -152,13 +159,8 @@ main {
   margin: 5%;
 }
 
-
 @media (min-width: 300px) { 
-  .carousel-imgs-6854{
-    width: 240px;
-    height: 300px;
-    text-align: center;
-  }
+
   .mockup-copy-main {
     width: 50%;
     height: 50%;

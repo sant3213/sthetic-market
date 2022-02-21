@@ -43,7 +43,7 @@
 }
 
 .why-course {
-  margin:2%;
+  margin: 2%;
 }
 
 .container-btn {
@@ -68,7 +68,7 @@
 
 .btn-join {
   overflow: hidden;
-  color:black;
+  color: black;
   border-radius: 30px;
   box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 64, 200, 0.5);
   transition: transform 0.3 ease, box-shadow 0.3s ease;
@@ -76,18 +76,24 @@
 
 .btn-join:hover {
   transform: translate(0, -6px);
-  box-shadow: 10px -10px 25px 0 rgba(185, 145, 236, 0.5), -10px 10px 25px 0 rgba(39, 64, 200, 0.5);
+  box-shadow: 10px -10px 25px 0 rgba(185, 145, 236, 0.5),
+    -10px 10px 25px 0 rgba(39, 64, 200, 0.5);
 }
 
 .btn-join::after {
-  content:"";
+  content: "";
   width: 400px;
   height: 400px;
   position: absolute;
   top: -50px;
   left: -100px;
   /* background-color: #ff3cac; */
-  background-image: linear-gradient(225deg, #fbff00 0%, #f5df14 50%, #fceb04 100%);
+  background-image: linear-gradient(
+    225deg,
+    #ff4800 0%,
+    #f5ae14 50%,
+    #fc5f04 100%
+  );
   z-index: -1;
   transition: transform 0.5s ease;
 }
@@ -98,27 +104,52 @@
 }
 
 .progress {
-	background-color: #d8d8d8;
-	border-radius: 20px;
-	position: relative;
-	margin: 15px 0;
-	height: 30px;
-	width: 300px;
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 23px;
+  width: 80%;
+  display: flex;
+  align-items: center;
 }
 
 .progress-done {
-	background: linear-gradient(to left, #ff0202, #FF9472);
-	box-shadow: 0 3px 3px -5px #f27f70, 0 2px 5px #F2709C;
-	border-radius: 20px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 0;
-	opacity: 0;
-	transition: 1s ease 0.3s;
+  background: linear-gradient(to left, #ff0202, #ff9472);
+  box-shadow: 0 3px 3px -5px #f27f70, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
 }
+
+.mockup-copy-main {
+  width: 80%;
+  height: 50%;
+}
+
+.copy-list {
+  margin-top: 10%;
+}
+
+.bonus {
+  margin-left: 20%;
+}
+
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 
 @media (min-width: 350px) {
   .title {
@@ -141,8 +172,16 @@
     color: #664d48;
     text-align: center;
     justify-content: start;
-    margin-right: 10%;
+    margin-left: 1%;
     margin-top: 2%;
+  }
+  .btn {
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 0.8rem;
+    position: relative;
+    margin: 32px;
+    font-weight: 600;
   }
 }
 
@@ -150,20 +189,13 @@
   ul li {
     font-size: medium;
   }
-  .carousel-imgs {
-    width: 65%;
-    height: 15%;
-    text-align: center;
-  }
   .carousel-imgs-6854 {
     width: 250px;
     height: 320px;
     text-align: center;
+    margin-left: 33%;
   }
-  .mockup-copy-main {
-    width: 50%;
-    height: 50%;
-  }
+
   .brow {
     justify-content: center;
     text-align: center;
@@ -180,8 +212,16 @@
     text-align: center;
     justify-content: start;
     margin-right: 10%;
-    margin-left: 17%;
+    margin-left: 2%;
     margin-top: 2%;
+  }
+  .btn {
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 0.9rem;
+    position: relative;
+    margin: 32px;
+    font-weight: 600;
   }
 }
 
@@ -189,21 +229,13 @@
   ul li {
     font-size: large;
   }
-  .carousel-imgs {
-    width: 45%;
-    height: 10%;
-    text-align: center;
-  }
+
   .carousel-imgs-6854 {
     width: 45%;
     height: 10%;
     text-align: center;
   }
 
-  .mockup-copy-main {
-    width: 50%;
-    height: 50%;
-  }
   .brow {
     justify-content: center;
     text-align: center;
@@ -215,31 +247,30 @@
     text-align: center;
     font-size: 35px;
   }
+  .slider-container {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: 830px) {
   ul li {
     font-size: larger;
   }
-  .carousel-imgs {
-    width: 350px;
-    height: 650px;
-    text-align: center;
-  }
   .carousel-imgs-6854 {
     width: 550px;
     height: 410px;
     text-align: center;
+    margin-left: 21%;
   }
 
   .mockup-copy {
     width: 100%;
   }
 
-  .mockup-copy-main {
-    width: 50%;
-    height: 50%;
-  }
   .brow {
     justify-content: center;
     text-align: center;
@@ -256,7 +287,24 @@
     text-align: center;
     justify-content: start;
     margin-right: 10%;
-    margin-left: 19%;
+    margin-left: 6%;
     margin-top: 2%;
+  }
+  .slider-container {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 1020px) {
+  .slider-container {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
