@@ -23,6 +23,8 @@ export class App extends React.Component {
 
   handleCallback = (childData, modalShow) =>{
     this.setState({email: childData, modalShow: modalShow});
+    console.log(childData);
+    // Call service to send the email
 }
   render() {
     const firstMockup = {
