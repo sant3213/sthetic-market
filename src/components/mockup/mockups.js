@@ -19,9 +19,9 @@ export default function Mockup({parentToChild}) {
             </div>
           </Col>
           <Col xs={8}>
-            <ul >
+            <ul className="mockup-list">
             {parentToChild.copys.map(function(name, index){
-                    return <li key={ index }> <FontAwesomeIcon className="check" icon={faCircleCheck} />   <span align="justify">{name}</span></li>;
+                    return <li key={ index }>   <p align="justify">  <FontAwesomeIcon className="check" icon={faCircleCheck} />{name}</p></li>;
                   })}
             </ul>
           </Col>

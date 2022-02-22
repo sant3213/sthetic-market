@@ -78,7 +78,9 @@ main {
 .mockup-copy-left {
   width: 130%;
   height: 95%;
+  margin-left: 2%;
   text-align: right;
+  padding-right: 7%;
 }
 .mockup-copy-right {
   width: 130%;
@@ -89,6 +91,7 @@ main {
 .check {
   color: #c08070;
   padding: 0px;
+  margin-right: 3%;
 }
 .line{
   border: 1px solid #c08070;

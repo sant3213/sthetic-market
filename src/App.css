@@ -9,6 +9,59 @@
   }
 }
 
+.blobs-container {
+  display: flex;
+}
+
+.blob {
+	background: red;
+	border-radius: 5%;
+	margin: 10px;
+	height: 60px;
+    width: 65%;
+color: white;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.blob-button {
+	background: red;
+	border-radius: 5%;
+	margin: 10px;
+	height: 40px;
+    width: 65%;
+color: white;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+
+.testimonios{
+  columns:1;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,7 +79,11 @@
   justify-content: center;
   text-align: center;
   font-size: 22px;
-  color: #664d48;
+  color: #333399
+}
+
+.mockup-list {
+  columns: 1;
 }
 
 .first-list {
@@ -66,6 +123,10 @@
   margin: 32px;
 }
 
+.center {
+  text-align: center;
+}
+
 .btn-join {
   overflow: hidden;
   color: black;
@@ -76,8 +137,8 @@
 
 .btn-join:hover {
   transform: translate(0, -6px);
-  box-shadow: 10px -10px 25px 0 rgba(185, 145, 236, 0.5),
-    -10px 10px 25px 0 rgba(39, 64, 200, 0.5);
+    box-shadow: 10px -10px 25px 0 rgba(236, 196, 145, 0.5),
+      -10px 10px 25px 0 rgba(200, 162, 39, 0.5);
 }
 
 .btn-join::after {
@@ -87,11 +148,11 @@
   position: absolute;
   top: -50px;
   left: -100px;
-  /* background-color: #ff3cac; */
+  background-color: #ff3cac;
   background-image: linear-gradient(
     225deg,
-    #ff4800 0%,
-    #f5ae14 50%,
+    #ee8989 0%,
+    #f55b14 50%,
     #fc5f04 100%
   );
   z-index: -1;
@@ -108,7 +169,7 @@
   border-radius: 20px;
   position: relative;
   margin: 15px 0;
-  height: 23px;
+  height: 30px;
   width: 80%;
   display: flex;
   align-items: center;
@@ -150,6 +211,15 @@
   left: 0;
 }
 
+.list-description{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.list-description ul{
+  columns: 1;
+}
+
 
 @media (min-width: 350px) {
   .title {
@@ -161,7 +231,10 @@
     justify-content: center;
     text-align: center;
     font-size: 14px;
-    color: #664d48;
+    color: #333399;
+  }
+  .mockup-list {
+    columns: 2;
   }
   .first-list-container ul li {
     font-size: larger;
@@ -174,6 +247,7 @@
     justify-content: start;
     margin-left: 1%;
     margin-top: 2%;
+    columns: 2;
   }
   .btn {
     text-decoration: none;
@@ -183,6 +257,8 @@
     margin: 32px;
     font-weight: 600;
   }
+
+  
 }
 
 @media (min-width: 500px) {
@@ -196,11 +272,18 @@
     margin-left: 33%;
   }
 
+  .mockup-list {
+    columns: 2;
+  }
+  .list-description ul{
+    columns: 2;
+  }
+
   .brow {
     justify-content: center;
     text-align: center;
     font-size: 16px;
-    color: #664d48;
+    color: #333399;
   }
   .title {
     justify-content: center;
@@ -223,6 +306,23 @@
     margin: 32px;
     font-weight: 600;
   }
+
+  .testimonios{
+    columns:2;
+  }
+  .blob-button {
+    background: red;
+    border-radius: 5%;
+    margin: 10px;
+    height: 40px;
+      width: 45%;
+  color: white;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 }
 
 @media (min-width: 700px) {
@@ -240,7 +340,7 @@
     justify-content: center;
     text-align: center;
     font-size: 18px;
-    color: #664d48;
+    color: #333399;
   }
   .title {
     justify-content: center;
@@ -253,6 +353,9 @@
     position: fixed;
     top: 0;
     left: 0;
+  }
+  .mockup-list {
+    columns: 2;
   }
 }
 
@@ -275,7 +378,7 @@
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    color: #664d48;
+    color: #333399;
   }
   .title {
     justify-content: center;
@@ -297,6 +400,9 @@
     top: 0;
     left: 0;
   }
+  .mockup-list {
+    columns: 2;
+  }
 }
 
 @media (min-width: 1020px) {
@@ -306,5 +412,8 @@
     position: fixed;
     top: 0;
     left: 0;
+  }
+  .mockup-list {
+    columns: 2;
   }
 }
