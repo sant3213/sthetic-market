@@ -11,7 +11,7 @@ export class Home extends React.Component {
   render() {
     const firstMockup = {
       title: "¿Cuáles técnicas vas aplicar?",
-      img: "/assets/mockup/drenajeLinfatico.png",
+      img: "https://drenaje-linfatico.s3.amazonaws.com/public/assets/mockup/drenajeLinfatico.png",
       copys: [
         "Técnica de moldeado brasileño",
         "Técnica de drenaje brasileño",
@@ -24,7 +24,7 @@ export class Home extends React.Component {
     };
     const secondMockup = {
       title: "Además llevate estos Bonus!!",
-      img: "/assets/mockup/smartmockups_kzxcup2d.jpg",
+      img: "https://drenaje-linfatico.s3.amazonaws.com/public/assets/mockup/smartmockups_kzxcup2d.jpg",
       copys: [
         "Ficha para historia clínica",
         "Manuales para elaborar tus insumos",
@@ -62,7 +62,7 @@ export class Home extends React.Component {
           <div className="portada">
             <img
               className="mockup-copy-main"
-              src="/assets/drenaje-linfatico-portada.png"
+              src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/drenaje-linfatico-portada.png"
             ></img>
           </div>
           <div className="list-description">
@@ -137,42 +137,42 @@ export class Home extends React.Component {
         <Container>
           <ul className="learn-list">
             <li>
-              <img className="icon-list" src="/assets/skincare.png"></img>
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/skincare.png"></img>
               Lifting facial
             </li>
             <li>
-              <img className="icon-list" src="/assets/hips.png"></img>Práctica
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/hips.png"></img>Práctica
               moldeadora
             </li>
             <li>
-              <img className="icon-list" src="/assets/massage.png"></img>
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/massage.png"></img>
               Práctica linfática
             </li>
             <li>
-              <img className="icon-list" src="/assets/massage-2.png"></img>
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/massage-2.png"></img>
               Postoperatorio
             </li>
             <li>
-              <img className="icon-list" src="/assets/ribsClose.png"></img>
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/ribsClose.png"></img>
               Cierre de costillas
             </li>
             <li>
-              <img className="icon-list" src="/assets/waist.png"></img>Drenajes
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.png"></img>Drenajes
             </li>
             <li>
-              <img className="icon-list" src="/assets/cream.png"></img>
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/cream.png"></img>
               Aplicaciones
             </li>
             <li>
-              <img className="icon-list" src="/assets/products.png"></img>
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/products.png"></img>
               Insumos y productos
             </li>
             <li>
-              <img className="icon-list" src="/assets/no-stopping.png"></img>
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/no-stopping.png"></img>
               Contraindicaciones
             </li>
             <li>
-              <img className="icon-list" src="/assets/waist.png"></img>Auto
+              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.png"></img>Auto
               drenaje Brasileño
             </li>
           </ul>
@@ -215,13 +215,24 @@ export class Home extends React.Component {
         <h1 className="title">Resultados en pacientes</h1>
         <Row>
           <Col>
-            <img src="/assets/Resultados/result1.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result1.png" className="result"></img>
           </Col>
           <Col>
-            <img src="/assets/Resultados/result2.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result2.png" className="result"></img>
           </Col>
           <Col>
-            <img src="/assets/Resultados/result3.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result3.png" className="result"></img>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result4.png" className="result"></img>
+          </Col>
+          <Col>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result5.png" className="result"></img>
+          </Col>
+          <Col>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result6.png" className="result"></img>
           </Col>
         </Row>
         <div className="container-btn">

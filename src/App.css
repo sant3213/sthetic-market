@@ -357,6 +357,11 @@ color: white;
   .mockup-list {
     columns: 2;
   }
+  .mockup-copy-right {
+    width: 130%;
+    height: 95%;
+    text-align: left;
+  }
 }
 
 @media (min-width: 830px) {
@@ -415,5 +420,20 @@ color: white;
   }
   .mockup-list {
     columns: 2;
+  }
+  .mockup-copy-right {
+    width: 115%;
+    height: 95%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1180px) {
+  .mockup-copy-left {
+    width: 115%;
+    height: 95%;
+    margin-left: 2%;
+    text-align: right;
+    padding-right: 7%;
   }
 }
