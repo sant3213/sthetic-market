@@ -62,7 +62,8 @@ export class Home extends React.Component {
           <div className="portada">
             <img
               className="mockup-copy-main"
-              src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/drenaje-linfatico-portada.png"
+              alt="drenaje linfático"
+              src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/drenaje_linfatico_po_W1RwK.jpg"
             ></img>
           </div>
           <div className="list-description">
@@ -130,49 +131,51 @@ export class Home extends React.Component {
        
 
         <Row className="container-btn"></Row>
+        <a  href="https://go.hotmart.com/S66618608K?ap=cbdc">
         <Row className="container-btn">
         <div className="blob"><h4 className="center">Últimos 15 lugares disponibles!</h4></div>
         </Row>
+        </a>
         <h1 className="title">¿ Qué vas Aprender?</h1>
         <Container>
           <ul className="learn-list">
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/skincare.png"></img>
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/skincare.jpg"></img>
               Lifting facial
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/hips.png"></img>Práctica
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/hips.jpg"></img>Práctica
               moldeadora
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/massage.png"></img>
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/massage.jpg"></img>
               Práctica linfática
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/massage-2.png"></img>
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/massage_2.jpg"></img>
               Postoperatorio
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/ribsClose.png"></img>
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/ribsclose.jpg"></img>
               Cierre de costillas
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.png"></img>Drenajes
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.jpg"></img>Drenajes
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/cream.png"></img>
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/cream.jpg"></img>
               Aplicaciones
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/products.png"></img>
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/products.jpg"></img>
               Insumos y productos
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/no-stopping.png"></img>
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/no_stopping.jpg"></img>
               Contraindicaciones
             </li>
             <li>
-              <img className="icon-list" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.png"></img>Auto
+              <img className="icon-list" alt="drenaje linfático" src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.jpg"></img>Auto
               drenaje Brasileño
             </li>
           </ul>
@@ -215,24 +218,24 @@ export class Home extends React.Component {
         <h1 className="title">Resultados en pacientes</h1>
         <Row>
           <Col>
-            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result1.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result1.jpg" className="result"></img>
           </Col>
           <Col>
-            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result2.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result2.jpg" className="result"></img>
           </Col>
           <Col>
-            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result3.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result3.jpg" className="result"></img>
           </Col>
         </Row>
         <Row>
           <Col>
-            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result4.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result4.jpg" className="result"></img>
           </Col>
           <Col>
-            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result5.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result5.jpg" className="result"></img>
           </Col>
           <Col>
-            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result6.png" className="result"></img>
+            <img src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/Resultados/result6.jpg" className="result"></img>
           </Col>
         </Row>
         <div className="container-btn">
