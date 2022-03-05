@@ -133,7 +133,7 @@ export class Home extends React.Component {
         <Row className="container-btn"></Row>
         <a  href="https://go.hotmart.com/S66618608K?ap=cbdc">
         <Row className="container-btn">
-        <div className="blob"><h4 className="center">Últimos 15 lugares disponibles!</h4></div>
+        <div className="blob"><h4 className="center">Quiero tomar el curso</h4></div>
         </Row>
         </a>
         <h1 className="title">¿ Qué vas Aprender?</h1>
