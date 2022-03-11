@@ -1,14 +1,16 @@
 import "../../App.css";
-import { Row, Container } from "react-bootstrap";
-import Mockup from "../mockup/mockups";
+import { Row } from "react-bootstrap";
+import MockupLeft from "../mockup/mockupLeft";
+import MockupRight from "../mockup/mockupRight";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import Slide from "../slide/slide";
 import React from "react";
 import Header from "../header/header";
-import { pleasures } from "../information/BenefitsList";
+import { FIRST_BENEFITS } from "../information/BenefitsList";
 import Results from "./results/results";
-
+import Footer from "./footer/footer";
+import Pleasures from './pleasures/pleasures';
 export class Home extends React.Component {
   render() {
     const firstMockup = {
@@ -59,10 +61,10 @@ export class Home extends React.Component {
           </div>
           <div className="list-description">
             <ul>
-              {pleasures.first.map((listInfo) => (
-                <li key={listInfo}>
+              {FIRST_BENEFITS.map((listInfo) => (
+                <li key={listInfo.id}>
                   <FontAwesomeIcon className="check" icon={faCircleCheck} />
-                  {listInfo}
+                  {listInfo.value}
                 </li>
               ))}
             </ul>
@@ -77,130 +79,15 @@ export class Home extends React.Component {
             </div>
           </Row>
         </a>
-        <h1 className="title">¿ Qué vas Aprender?</h1>
-        <Container>
-          <ul className="learn-list">
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/skincare.jpg"
-              ></img>
-              Lifting facial
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/hips.jpg"
-              ></img>
-              Práctica moldeadora
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/massage.jpg"
-              ></img>
-              Práctica linfática
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/massage_2.jpg"
-              ></img>
-              Postoperatorio
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/ribsclose.jpg"
-              ></img>
-              Cierre de costillas
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.jpg"
-              ></img>
-              Drenajes
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/cream.jpg"
-              ></img>
-              Aplicaciones
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/products.jpg"
-              ></img>
-              Insumos y productos
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/no_stopping.jpg"
-              ></img>
-              Contraindicaciones
-            </li>
-            <li>
-              <img
-                className="icon-list"
-                alt="drenaje linfático"
-                src="https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.jpg"
-              ></img>
-              Auto drenaje Brasileño
-            </li>
-          </ul>
-          <div className="first-list-container">
-            <ul className="first-list">
-              {pleasures.second.map((listInfo) => (
-                <li key={listInfo}>
-                  <FontAwesomeIcon className="check" icon={faCircleCheck} />
-                  {listInfo}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Container>
+        <Pleasures/>
         <hr className="line"></hr>
-        <div className="copy-one">
-          <Mockup parentToChild={firstMockup} />
-        </div>
-        <div className="copy-one">
-          <Mockup parentToChild={secondMockup} />
-        </div>
+        <MockupLeft parentToChild={firstMockup} />
+        <MockupRight parentToChild={secondMockup} />
         <hr className="line"></hr>
-        <h1 className="title">Testimonios de alumnos</h1>
         <Slide />
         <hr className="line"></hr>
         <Results />
-        <div className="container-btn">
-          <div className="prices">
-            <p className="discount">
-              80% OFF <span className="tachado">300</span>
-            </p>
-            <div className="first-currentPrice">
-              <p className="currentPrice">$55 USD </p>
-            </div>
-          </div>
-        </div>
-        <a href="https://go.hotmart.com/S66618608K?ap=cbdc">
-          <Row className="container-btn">
-            <div className="blob-button">
-              <h4 className="center">Quiero aprender!</h4>
-            </div>
-          </Row>
-        </a>
+        <Footer />
       </div>
     );
   }

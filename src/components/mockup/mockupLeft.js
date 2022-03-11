@@ -2,13 +2,13 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-export default function Mockup({parentToChild}) {
 
-    return (
+export default function MockupLeft({ parentToChild }) {
+  return (
+    <div className="copy-one">
       <Container>
-         <h3 className="title"> {parentToChild.title}</h3>
+        <h3 className="title"> {parentToChild.title}</h3>
         <Row className="copy-list">
-       
           <Col xs={4}>
             <div>
               <img
@@ -20,12 +20,18 @@ export default function Mockup({parentToChild}) {
           </Col>
           <Col xs={8}>
             <ul className="mockup-list">
-            {parentToChild.copys.map(function(name, index){
-                    return <li key={ index }>   <p align="justify">  <FontAwesomeIcon className="check" icon={faCircleCheck} />{name}</p></li>;
-                  })}
+              {parentToChild.copys.map(function (name, index) {
+                  return (<li key={index}>
+                    <p align="justify">
+                      <FontAwesomeIcon className="check" icon={faCircleCheck} />
+                      {name}
+                    </p>
+                  </li>)
+              })}
             </ul>
           </Col>
         </Row>
       </Container>
-    );
+    </div>
+  );
 }
