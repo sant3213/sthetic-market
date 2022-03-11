@@ -159,3 +159,28 @@ export const IMAGES_DATA = [
     title: "Auto drenaje Brasileño",
   },
 ];
+
+export const secondMockup = {
+  title: "Además llevate estos Bonus!!",
+  img: "https://drenaje-linfatico.s3.amazonaws.com/public/assets/mockup/smartmockups_kzxcup2d.jpg",
+  copys: [
+    "Ficha para historia clínica",
+    "Manuales para elaborar tus insumos",
+    "Guías de lectura complementaria",
+    "Descuentos en productos brasileños",
+  ],
+};
+
+const firstMockup = {
+  title: "¿Cuáles técnicas vas aplicar?",
+  img: "https://drenaje-linfatico.s3.amazonaws.com/public/assets/mockup/drenajeLinfatico.png",
+  copys: [
+    "Técnica de moldeado brasileño",
+    "Técnica de drenaje brasileño",
+    "Técnica postoperatoria",
+    "Técnica de autodrenaje",
+    "Técnica de Lifting facial",
+    "Técnica de cierre de costillas",
+    "Técnicas complementarias",
+  ],
+};

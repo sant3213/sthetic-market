@@ -1,8 +1,8 @@
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { secondBenefits } from "../../information/BenefitsList";
-import {IMAGES_DATA} from '../../information/BenefitsList';
+import { secondBenefits } from "../../../utils/constants";
+import {IMAGES_DATA} from '../../../utils/constants';
 export default function Pleasures() {
   
   return (
